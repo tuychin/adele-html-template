@@ -4,28 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Title</title>
+  <title>Adele landing page</title>
 </head>
 <body>
   
   <!-- main wrapper -->
-  <div class="wrapper">
+  <div class="main-wrapper">
 
-      <header>
-        <nav></nav>
+      <header class="header">
+
+        <div class="container header__container">
+
+          <div class="logo header__logo">
+            <a href="#">
+                <img class="logo__image" src="assets/img/adele-logo.png" alt="adele-logo">
+                <span class="logo__text">Adele</span>           
+            </a>
+          </div>
+    
+          <nav class="navbar">
+            <button class="navbar__toggle-btn navbar__toggle-btn_hidden-desktop"></button>
+            <ul class="navbar__list">
+              <li class="navbar__item"><a href="#">Features</a></li>
+              <li class="navbar__item"><a href="#">Results</a></li>
+              <li class="navbar__item"><a href="#">Testimonials</a></li>
+              <li class="navbar__item"><a href="#">Supplement</a></li>
+              <li class="navbar__item"><a href="#">Inquire</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
       </header>
 
-      <!-- only content wrapper -->
-      <main class="content-wrapper">
+      <!-- main content -->
+      <main class="main-content">
 
-        <!--  expamle section -->
-        <section id="promo">
+        <!-- expamle section -->
+        <section class="example">
           <div class="container">
-            <h1>Webpack Template</h1>
+
           </div>
         </section>
 
-      </main> <!-- end content wrapper -->
+      </main> <!-- end main content -->
 
     <footer></footer>
 

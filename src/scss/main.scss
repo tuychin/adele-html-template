@@ -43,7 +43,6 @@ ul, li {
 }
 
 section, .section {
-  position: relative;
   padding: 40px 0;
   @media screen and (max-width: $desktopWidth) {
     padding: 36px 0;
@@ -56,14 +55,14 @@ section, .section {
   }
 }
 
-.wrapper {
+.main-wrapper {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   min-height: 100vh;
 }
 
-.content-wrapper {
+.main-content {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -72,7 +71,6 @@ section, .section {
 .container {
   width: 100%;
   flex: 0 0 auto;
-  position: relative;
   margin: 0 auto;
   max-width: $desktopWidth;
   @media screen and (max-width: $smDesktopWidth) {
@@ -87,6 +85,7 @@ section, .section {
 }
 
 // Modules
-// @import "modules/header.scss";
-// @import "modules/footer.scss";
-// @import "modules/content.scss";
+@import "modules/header.scss";
+@import "modules/navbar.scss";
+@import "modules/footer.scss";
+@import "modules/content.scss";

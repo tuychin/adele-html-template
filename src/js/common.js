@@ -1,1 +1,3 @@
 //JavaScript here
+
+import './navbar';
