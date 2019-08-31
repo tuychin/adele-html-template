@@ -1,4 +1,4 @@
-import { ready } from './utils';
+import { ready } from '../utils';
 
 ready(() => { 
   const toggleBtn = document.querySelector('.navbar__toggle-btn');
