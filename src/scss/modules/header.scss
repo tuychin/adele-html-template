@@ -49,8 +49,8 @@
     width: 35px;
     height: 5px;
     border-radius: 10px;
-    background-color: $primary-color;
-    transition-duration: .1s;
+    background-color: $mainFontColor;
+    transition-duration: .2s;
   }
   span::before {
     content: '';
@@ -104,10 +104,12 @@
       flex-wrap: wrap;
     }
   }
-  
-  .toggle-btn_hidden-desktop {
-    display: block;
-    padding-bottom: 5px;
+
+  .toggle-btn {
+    &_hidden-desktop {
+      display: block;
+      padding-bottom: 5px;
+    }
   }
 
   .navbar {

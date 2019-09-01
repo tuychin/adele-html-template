@@ -1,3 +1,3 @@
 //JavaScript here
 
-import './modules/navbar';
+import './modules/header';
