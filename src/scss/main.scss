@@ -26,6 +26,7 @@ body {
   font-family: $mainFont;
 	font-size: $mainFontSize;
   font-weight: $mainFontWeight;
+  background-color: $common-background-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
