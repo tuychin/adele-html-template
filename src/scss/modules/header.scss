@@ -7,7 +7,7 @@
     justify-content: space-between;
   }
   &__logo {
-    margin: 1em;
+    margin: 1em 0em;
   }
 }
 
@@ -49,7 +49,7 @@
     width: 35px;
     height: 5px;
     border-radius: 10px;
-    background-color: $mainFontColor;
+    background-color: $font-color;
     transition-duration: .2s;
   }
   span::before {
@@ -89,11 +89,15 @@
     display: flex;
   }
   &__item {
-    margin-right: 2em;
+    margin-left: 2em;
     font-weight: 700;
   }
   &__item > a {
-    color: $mainFontColor;
+    color: $font-color;
+    transition: color .5s ease;
+  }
+  &__item > a:hover {
+    color: $primary-color;
   }
 
 }
@@ -128,7 +132,7 @@
     }
     &__item {
       margin-bottom: 2em;
-      margin-right: 0em;
+      margin-left: 0em;
     }
   }
 }

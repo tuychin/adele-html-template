@@ -7,7 +7,7 @@
 html {
   line-height: $mainLineHeight;
 	font-size: $mainFontSize;
-	color: $mainFontColor;
+	color: $font-color;
   height: 100%;
   @media screen and (max-width: $desktopWidth) {
 		font-size: 16px;
@@ -32,7 +32,10 @@ body {
 
 *, *:before, *:after { box-sizing: border-box; }
 
-h1, h2, h3, h4, h5, h6 { margin: 0; }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: $headingFont;
+}
 
 a { text-decoration: none; }
 
@@ -68,24 +71,19 @@ section, .section {
   min-height: 100vh;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
 .container {
   width: 100%;
   flex: 0 0 auto;
   margin: 0 auto;
   max-width: $desktopWidth;
   @media screen and (max-width: $smDesktopWidth) {
-    max-width: tableWidth;
+    max-width: $tableWidth;
   }
   @media screen and (max-width: $tableWidth) {
-    max-width: phoneWidth;
+    max-width: $phoneWidth !important;
   }
   @media screen and (max-width: $phoneWidth) {
-    max-width: smPhoneWidth;
+    max-width: $smPhoneWidth !important;
   }
 }
 

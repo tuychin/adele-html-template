@@ -3,7 +3,6 @@ $mainFont                : 'Lato', sans-serif;
 $headingFont             : 'Raleway', sans-serif;
 
 // Size
-$mainFontColor           : #666666;
 $mainFontSize            : 16px;
 $mainFontWeight          : 300;
 $mainLineHeight          : 24px;
@@ -15,22 +14,11 @@ $phoneWidth              : 480px;
 $smPhoneWidth            : 320px;
 
 // Main color
-$default-color           : #fafcfc;
+$font-color              : #666666;
+$common-background-color : #fafcfc;
 $primary-color           : #18a3dd;
 $secondary-color         : #333740;
 $success-color           : #26de81;
 $danger-color            : #fc5c65;
 $warning-color           : #fed330;
 $light-color             : #999999;
-
-// Neutral Color
-$neutral-primary         : #303133;
-$neutral-regular         : #606266;
-$neutral-secondary       : #909399;
-$neutral-placeholder     : #C0C4CC;
-
-// Border Color
-$border-base             : #DCDFE6;
-$border-light            : #E4E7ED;
-$border-lighter          : #EBEEF5;
-$border-lightex          : #F2F6FC;
