@@ -68,6 +68,11 @@ section, .section {
   min-height: 100vh;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .container {
   width: 100%;
   flex: 0 0 auto;
@@ -86,6 +91,5 @@ section, .section {
 
 // Modules
 @import "modules/header.scss";
-@import "modules/navbar.scss";
 @import "modules/footer.scss";
 @import "modules/content.scss";
