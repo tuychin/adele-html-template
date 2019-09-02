@@ -27,6 +27,7 @@ body {
 	font-size: $mainFontSize;
   font-weight: $mainFontWeight;
   background-color: $common-background-color;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -91,4 +92,4 @@ section, .section {
 // Modules
 @import "modules/header.scss";
 @import "modules/footer.scss";
-@import "modules/content.scss";
+@import "modules/promo.scss";
