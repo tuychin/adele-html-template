@@ -8,7 +8,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 2em;
   }
   &__image {
     display: inline-block;
@@ -74,13 +73,29 @@
     padding-bottom: 5px;
     font-weight: 700;
     line-height: 3em;
+    position: relative;
+    transition: all .5s;
     color: $secondary-color;
     img {
       margin-bottom: 2px;
       margin-left: 5px;
     }
+    &:before {
+      content: "";
+      width: 0;
+      height: 0.1em;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: $secondary-color;
+      transition: all 0.3s;
+    }
     &:hover {
-      border-bottom: 3px solid $primary-color;
+        &:before {
+            width: 100%;
+            left: 0;
+            background: $primary-color;
+        }
     }
   }
 }
