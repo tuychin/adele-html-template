@@ -1,4 +1,4 @@
-// content style
+// promo style
 
 .promo {
   background-image: url('/assets/img/Rectangle_1.png');
@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 50px;
   }
   &__image {
     display: inline-block;
@@ -125,7 +126,14 @@
 
 @media screen and (max-width: $tableWidth) {
   .promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: none;
+    &__container {
+      padding-top: 0px;
+    }
     &__image {
         display: none;
     }
@@ -139,6 +147,26 @@
       h1 {
           font-size: rem(60);        
       }
+    }
+    &__button {
+      margin-right: 0;
+    }
+    &__popup {
+      .popup__content iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    &__video {
+      margin-left: 0;
     }
   }
 }

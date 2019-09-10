@@ -1,11 +1,11 @@
 // header style
 
 .header {
-  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
   &__container {
     display: flex;
     justify-content: space-between;
-  }
+    border-bottom: 1px solid #ebebeb;
+}
   &__logo {
     margin: 1em 0em;
   }
@@ -33,7 +33,7 @@
   @include size(46px, 40px);
   cursor: pointer;
   display: flex;
-  margin: 2em 1em;
+  margin: 2em 0;
   background: transparent;
   align-items: center;
 
