@@ -78,12 +78,14 @@
 }
 
 @media screen and (max-width: $smDesktopWidth) {
-  .promo__heading {
-    .heading_line-left::before {
-      display: none;
-    }
-    .heading_line-right::after {
-      display: none;
+  .promo {
+    .heading {
+      &_line-left::before {
+        display: none;
+      }
+      &_line-right::after {
+        display: none;
+      }
     }
   }
 }
