@@ -90,10 +90,14 @@ section, .section {
   }
 }
 
-// Modules
-@import "../common.blocks/sections/header/header.scss";
-@import "../common.blocks/sections/footer/footer.scss";
-@import "../common.blocks/popup/popup.scss";
-@import "../common.blocks/sections/promo/promo.scss";
-@import "../common.blocks/sections/numbers/numbers.scss";
-@import "../common.blocks/sections/features/features.scss";
+// common-blocks
+@import "../blocks/common-blocks/popup/popup.scss";
+@import "../blocks/common-blocks/heading/heading.scss";
+@import "../blocks/common-blocks/button/button.scss";
+
+// sections
+@import "../blocks/sections/header/header.scss";
+@import "../blocks/sections/footer/footer.scss";
+@import "../blocks/sections/promo/promo.scss";
+@import "../blocks/sections/numbers/numbers.scss";
+@import "../blocks/sections/features/features.scss";

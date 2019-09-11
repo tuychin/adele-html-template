@@ -1,5 +1,11 @@
 //JavaScript here
 
-import '../common.blocks/sections/header/header';
-import '../common.blocks/popup/popup';
-import '../common.blocks/sections/numbers/numbers';
+import { ready } from '../../../js/utils';
+
+ready(() => {
+
+  import '../blocks/sections/header/header';
+  import '../blocks/common-blocks/popup/popup';
+  import '../blocks/sections/numbers/numbers';
+
+});

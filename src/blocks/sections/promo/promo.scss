@@ -43,30 +43,6 @@
   }
 }
 
-.heading {
-  display: flex;
-  flex-wrap: nowrap;
-  font-weight: 900;
-  color: $secondary-color;
-  text-transform: uppercase;
-  &_line-left::before {
-    @include size(5px, 100%);
-    content: "";
-    display: inline-block;
-    margin-right: 1em;
-    border-radius: 10px;
-    background-color: $primary-color;
-  }
-  &_line-right::after {
-    @include size(5px, 100%);
-    content: "";
-    display: inline-block;
-    margin-right: 1em;
-    border-radius: 10px;
-    background-color: $primary-color;
-  }
-}
-
 .buttons {
   text-transform: uppercase;
   &__video {
@@ -101,24 +77,12 @@
   }
 }
 
-.button {
-  padding: rem(17) rem(40) rem(17) rem(40);
-  background-color: $primary-color;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 50px;
-  transition: background-color .5s ease;
-  &:hover {
-    background-color: #1abcff;
-  }
-}
-
 @media screen and (max-width: $smDesktopWidth) {
-  .heading {
-    &_line-left::before {
+  .promo__heading {
+    .heading_line-left::before {
       display: none;
     }
-    &_line-right::after {
+    .heading_line-right::after {
       display: none;
     }
   }
