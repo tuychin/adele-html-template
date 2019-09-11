@@ -1,6 +1,6 @@
 // set popupBtn class
 
-import { ready } from '../../../js/utils';
+import { ready, videoOff } from '../../../js/utils';
 
 ready(() => {
   
@@ -8,33 +8,25 @@ ready(() => {
   const popup = document.querySelector('.popup');
   const closeBtn = document.querySelector('.popup__close-btn')
   const overlay = popup.querySelector('.popup__overlay');
-  
-  const videoOff = () => {
-    const popupContent = popup.querySelector('.popup__content').children;
-  
-    for (let content of popupContent) {
-      if (content.getAttribute('src')) {
-        let oldAttr = content.getAttribute('src');
-  
-        content.setAttribute('src', '');
-        content.setAttribute('src', oldAttr);
-      }
-    }
-  }
+  const popupVideo = popup.querySelector('iframe');
   
   popupBtn.addEventListener('click', (e) => {
+    videoOff(popupVideo);
     e.preventDefault();
     popup.classList.toggle('popup_open');
+    document.body.style.overflow = 'hidden';
   });
   
   overlay.addEventListener('click', (e) => {
-    videoOff();
+    videoOff(popupVideo);
     popup.classList.remove('popup_open');
+    document.body.style.overflow = 'visible';
   });
   
   closeBtn.addEventListener('click', (e) => {
-    videoOff();
+    videoOff(popupVideo);
     popup.classList.remove('popup_open');
+    document.body.style.overflow = 'visible';
   });
 
 });

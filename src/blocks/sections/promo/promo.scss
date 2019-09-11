@@ -79,6 +79,21 @@
 
 @media screen and (max-width: $smDesktopWidth) {
   .promo {
+    background-image: none;
+    &__container {
+      padding-top: 0px;
+    }
+    &__image {
+      display: none;
+    }
+    &__caption {
+      width: 100%;
+      align-items: center;
+    }
+    &__heading {
+      margin-bottom: rem(30);
+      text-align: center;
+    }
     .heading {
       &_line-left::before {
         display: none;
@@ -96,12 +111,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: none;
     &__container {
       padding-top: 0px;
-    }
-    &__image {
-        display: none;
     }
     &__caption {
       width: 100%;
