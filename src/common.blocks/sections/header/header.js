@@ -1,4 +1,4 @@
-import { ready } from '../utils';
+import { ready } from '../../../js/utils';
 
 ready(() => { 
   const toggleBtn = document.querySelector('.toggle-btn');

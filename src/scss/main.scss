@@ -91,7 +91,9 @@ section, .section {
 }
 
 // Modules
-@import "modules/header.scss";
-@import "modules/footer.scss";
-@import "modules/popup.scss";
-@import "modules/promo.scss";
+@import "../common.blocks/sections/header/header.scss";
+@import "../common.blocks/sections/footer/footer.scss";
+@import "../common.blocks/popup/popup.scss";
+@import "../common.blocks/sections/promo/promo.scss";
+@import "../common.blocks/sections/numbers/numbers.scss";
+@import "../common.blocks/sections/features/features.scss";
