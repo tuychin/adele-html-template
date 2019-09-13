@@ -53,6 +53,7 @@
     }
     &__item {
       margin: 0 0 4rem 0;
+      align-self: end;
     }
     &__img {
       display: none;
@@ -69,6 +70,7 @@
       align-items: center;
     }
     &__item {
+      align-self: center !important;
       text-align: left;
       &:nth-child(4) {
         margin: 0;
