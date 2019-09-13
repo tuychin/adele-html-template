@@ -14,6 +14,9 @@
     border-radius: 10px;
     background-color: $primary-color;
   }
+  &_line-right {
+    justify-content: flex-end;
+  }
   &_line-right::after {
     width: 5px;
     content: "";
