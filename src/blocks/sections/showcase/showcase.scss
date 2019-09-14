@@ -1,6 +1,6 @@
-// promo style
+// showcase style
 
-.promo {
+.showcase {
   background-image: url('/assets/img/Rectangle_1.png');
   background-position: right center;
   background-repeat: no-repeat;
@@ -78,7 +78,7 @@
 }
 
 @media screen and (max-width: $smDesktopWidth) {
-  .promo {
+  .showcase {
     background-image: none;
     &__container {
       padding-top: 0px;
@@ -106,7 +106,7 @@
 }
 
 @media screen and (max-width: $tableWidth) {
-  .promo {
+  .showcase {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,12 +128,6 @@
     &__button {
       margin-right: 0;
     }
-    &__popup {
-      .popup__content iframe {
-        width: 100%;
-        height: 100%;
-      }
-    }
   }
 
   .buttons {
@@ -144,6 +138,17 @@
     text-transform: uppercase;
     &__video {
       margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .showcase {
+    &__popup {
+      .popup__content iframe {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }

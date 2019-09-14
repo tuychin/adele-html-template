@@ -1,0 +1,21 @@
+// results style
+
+.results {
+  padding-top: 100px;
+  background-color: #fff;
+  &__container {
+
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__slider {
+
+  }
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .results {
+    padding-top: 50px;
+  }
+}

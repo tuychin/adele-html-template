@@ -91,14 +91,16 @@ section, .section {
 }
 
 // common-blocks
+@import "../blocks/common-blocks/header/header.scss";
+@import "../blocks/common-blocks/footer/footer.scss";
 @import "../blocks/common-blocks/popup/popup.scss";
 @import "../blocks/common-blocks/heading/heading.scss";
 @import "../blocks/common-blocks/button/button.scss";
 @import "../blocks/common-blocks/title/title.scss";
+@import "../blocks/common-blocks/slider/slider.scss";
 
 // sections
-@import "../blocks/sections/header/header.scss";
-@import "../blocks/sections/footer/footer.scss";
-@import "../blocks/sections/promo/promo.scss";
+@import "../blocks/sections/showcase/showcase.scss";
 @import "../blocks/sections/numbers/numbers.scss";
 @import "../blocks/sections/features/features.scss";
+@import "../blocks/sections/results/results.scss";
