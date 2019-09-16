@@ -3,19 +3,111 @@
 .results {
   padding-top: 100px;
   background-color: #fff;
-  &__container {
-
-  }
   &__title {
     margin-bottom: 50px;
   }
   &__slider {
-
+    .slider__item {
+      padding: 0 1.5rem;
+      overflow: hidden;
+    }
+  }
+  &__person {
+    width: 100%;
+    max-width: $tableWidth;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__wrap {
+    display: flex;
+    overflow: hidden;
+    &_col {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    &_row {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__photo {
+    &_before {
+      width: 242px;
+      position: relative;
+      left: rem(25);
+      z-index: 9;
+    }
+    &_after {
+      width: 340px;
+      position: relative;
+      right: rem(40);
+    }
+  }
+  &__weight {
+    margin: 1rem;
+    font-family: Lato;
+    font-size: 300;
+    color: $secondary-color;
+    p {
+      margin-top: .8rem;
+      color: $primary-color;
+    }
+  }
+  &__kg {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  &__person-information {
+    margin: 1rem;
+    font-size: 1rem;
+    span {
+      font-weight: 300;
+    }
   }
 }
 
 @media screen and (max-width: $smDesktopWidth) {
   .results {
     padding-top: 50px;
+    &__person {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__wrap {
+      align-items: center;
+    }
+    &__photo {
+      &_before {
+        width: 40%;
+        position: relative;
+        left: rem(25);
+        z-index: 9;
+      }
+      &_after {
+        width: 60%;
+        position: relative;
+        right: rem(25);
+      }
+    }
+    &__weight {
+      margin-top: 2.5rem;
+      text-align: center;
+    }
+    &__person-information {
+      &::before {
+        display: none;
+        text-align: center;
+      }
+    }
   }
+}
+
+@media screen and (min-width: $phoneWidth) and (max-width: $tableWidth) {  
+  
+}
+
+@media screen and (max-width: $phoneWidth) {
+  
 }
