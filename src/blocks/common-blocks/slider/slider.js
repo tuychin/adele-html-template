@@ -28,9 +28,8 @@ ready(() => {
     items.insertBefore(cloneLast, firstSlide);
     wrapper.classList.add('slider_loaded');
 
-    // slider-dots
+    // slider dots
     generateDots();
-    dotActive();
 
     // mouse events
     items.onmousedown = dragStart;
@@ -124,7 +123,7 @@ ready(() => {
     }
     
     function generateDots() {
-      const dots = document.createElement('div'),
+      const dots = document.querySelector('.slider__dots'),
             dot = document.createElement('span');
 
       function addArrows(parentNode) {
@@ -133,12 +132,10 @@ ready(() => {
 
         arrowLeft.classList.add('slider__arrow', 'slider__arrow_left');
         arrowRight.classList.add('slider__arrow', 'slider__arrow_right');
-
         parentNode.prepend(arrowLeft);
         parentNode.append(arrowRight);
       }
 
-      dots.classList.add('slider__dots');
       dot.classList.add('slider__dot');
 
       for (let i = 0; i < slidesLength; i++) {
@@ -148,7 +145,7 @@ ready(() => {
       }
 
       addArrows(dots);
-      wrapper.append(dots);
+      dotActive();
     }
 
     function dotActive() {

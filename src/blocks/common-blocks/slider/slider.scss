@@ -42,20 +42,7 @@ $slider-height: 100%;
     background-color: transparent;
     border-radius: 50px;
     cursor: pointer;
-    background-repeat: no-repeat;
-    transition: all .5s ease;
-    &_prev {
-      background-image: url(/assets/img/prev-control.png);
-    }
-    &_next {
-      background-image: url(/assets/img/next-control.png);
-    }
-    &_prev:hover {
-      background-image: url(/assets/img/prev-control-hover.png);
-    }
-    &_next:hover {
-      background-image: url(/assets/img/next-control-hover.png);
-    }
+    transition: all .2s ease;
   }
   &__dots {
     width: 100%;
