@@ -5,7 +5,7 @@ import { ready, videoOff } from '../../../js/utils';
 ready(() => {
 
   function modal() {
-    const popupBtn = document.querySelector('.buttons__video');
+    const popupBtn = document.querySelector('.intro__video');
     const popup = document.querySelector('.popup');
     const closeBtn = document.querySelector('.popup__close-btn')
     const overlay = popup.querySelector('.popup__overlay');

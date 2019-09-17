@@ -1,6 +1,6 @@
-// showcase style
+// intro style
 
-.showcase {
+.intro {
   background-image: url('/assets/img/Rectangle_1.png');
   background-position: right center;
   background-repeat: no-repeat;
@@ -23,28 +23,25 @@
     flex-direction: column;
     justify-content: center;
   }
-  &__heading {
+  &__accented-line {
     margin-bottom: rem(65);
-    h1 {
-      font-size: rem(72);
-      line-height: rem(55);
-      margin-bottom: rem(25);
-    }
-    span {
-      font-size: rem(24);
-      line-height: rem(24);
-    }
+  }
+  &__heading {
+    font-size: rem(72);
+    line-height: rem(55);
+    margin-bottom: rem(25);
+  }
+  &__subheading {
+    font-size: rem(24);
+    line-height: rem(24);
   }
   &__desc {
     margin-bottom: rem(45);
   }
   &__button {
     margin-right: rem(20);
+    text-transform: uppercase;
   }
-}
-
-.buttons {
-  text-transform: uppercase;
   &__video {
     margin-left: rem(10);
     padding-bottom: 5px;
@@ -53,10 +50,7 @@
     position: relative;
     transition: all .5s;
     color: $secondary-color;
-    img {
-      margin-bottom: 2px;
-      margin-left: 5px;
-    }
+    text-transform: uppercase;
     &:before {
       content: "";
       width: 0;
@@ -75,10 +69,20 @@
         }
     }
   }
+  &__play-icon {
+    @include size(20px);
+    margin-left: 5px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    background-image: url(/assets/img/play.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 @media screen and (max-width: $smDesktopWidth) {
-  .showcase {
+  .intro {
     background-image: none;
     &__container {
       padding-top: 0px;
@@ -90,15 +94,10 @@
       width: 100%;
       align-items: center;
     }
-    &__heading {
+    &__accented-line {
       margin-bottom: rem(30);
       text-align: center;
-    }
-    .heading {
-      &_line-left::before {
-        display: none;
-      }
-      &_line-right::after {
+      &::before {
         display: none;
       }
     }
@@ -106,7 +105,7 @@
 }
 
 @media screen and (max-width: $tableWidth) {
-  .showcase {
+  .intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,7 +117,7 @@
       width: 100%;
       text-align: center;
     }
-    &__heading {
+    &__accented-line {
       margin-bottom: rem(25);
       justify-content: center;
       h1 {
@@ -128,22 +127,15 @@
     &__button {
       margin-right: 0;
     }
-  }
-
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
     &__video {
       margin-left: 0;
     }
   }
+
 }
 
 @media screen and (max-width: $phoneWidth) {
-  .showcase {
+  .intro {
     &__popup {
       .popup__content iframe {
         width: 100%;

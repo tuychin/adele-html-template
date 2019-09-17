@@ -123,7 +123,7 @@ ready(() => {
     }
     
     function generateDots() {
-      const dots = document.querySelector('.slider__dots'),
+      const dots = document.querySelector('.js-slider__dots'),
             dot = document.createElement('span');
 
       function addArrows(parentNode) {

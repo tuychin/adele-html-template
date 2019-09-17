@@ -40,9 +40,24 @@ $slider-height: 100%;
   &__control {
     @include size(66px);
     background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: 100vw;
     border-radius: 50px;
     cursor: pointer;
-    transition: all .2s ease;
+    transition: all .1s ease;
+    &_prev {
+      background-image: url(/assets/img/control-prev.svg);
+    }
+    &_next {
+      background-image: url(/assets/img/control-next.svg);
+    }
+    &_prev:active {
+      background-size: 60px 60px;
+    }
+    &_next:active {
+      background-size: 60px 60px;
+    }
   }
   &__dots {
     width: 100%;
@@ -57,9 +72,11 @@ $slider-height: 100%;
     display: inline-block;
     margin: 1rem;
     border-radius: 50px;
-    background-color: $light-color;
+    background-color: $secondary-color;
+    opacity: .3;
     &_active {
       background-color: $primary-color;
+      opacity: 1;
     }
   }
 }
@@ -99,6 +116,7 @@ $slider-height: 100%;
     &__arrow {
       @include size(30px);
       margin: .5rem;
+      opacity: .3;
       &_left {
         background-image: url(/assets/img/arrow-left.svg);
       }
@@ -129,6 +147,7 @@ $slider-height: 100%;
     &__arrow {
       @include size(30px);
       margin: .5rem;
+      opacity: .3;
       &_left {
         background-image: url(/assets/img/arrow-left.svg);
       }

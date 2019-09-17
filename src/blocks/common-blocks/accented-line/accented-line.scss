@@ -1,12 +1,12 @@
-// heading style
+// accented-line style
 
-.heading {
+.accented-line {
   display: flex;
   flex-wrap: nowrap;
   font-weight: 900;
   color: $secondary-color;
   text-transform: uppercase;
-  &_line-left::before {
+  &_left::before {
     width: 5px;
     content: "";
     display: inline-block;
@@ -14,10 +14,10 @@
     border-radius: 10px;
     background-color: $primary-color;
   }
-  &_line-right {
+  &_right {
     justify-content: flex-end;
   }
-  &_line-right::after {
+  &_right::after {
     width: 5px;
     content: "";
     display: inline-block;

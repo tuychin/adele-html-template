@@ -8,31 +8,29 @@
 </head>
 <body>
   
-  <!-- main wrapper -->
+  <!-- main container -->
   <div class="main-wrapper">
 
       <!-- header -->
       <header class="header">
-        <div class="header__container container">
+        <div class="container header__container">
 
-          <div class="header__logo logo">
-            <a href="#">
-                <img class="logo__image" src="assets/img/adele-logo.svg" alt="adele-logo">
-                <span class="logo__text">Adele</span>           
-            </a>
-          </div>
+          <a class="header__logo" href="#">
+              <img class="header__image" src="assets/img/adele-logo.svg" alt="adele-logo">
+              <span class="header__company">Adele</span>           
+          </a>
 
-          <button class="toggle-btn toggle-btn_hidden-desktop">
-            <span></span>
+          <button class="header__toggle-btn header__toggle-btn_hidden_desktop">
+            <span class="header__hamburger"></span>
           </button>
     
-          <nav class="navbar">
-            <ul class="navbar__list">
-              <li class="navbar__item"><a href="#">Features</a></li>
-              <li class="navbar__item"><a href="#">Results</a></li>
-              <li class="navbar__item"><a href="#">Testimonials</a></li>
-              <li class="navbar__item"><a href="#">Supplement</a></li>
-              <li class="navbar__item"><a href="#">Inquire</a></li>
+          <nav class="header__navbar">
+            <ul class="header__items-list">
+              <li class="header__item"><a class="header__link" href="#">Features</a></li>
+              <li class="header__item"><a class="header__link" href="#">Results</a></li>
+              <li class="header__item"><a class="header__link" href="#">Testimonials</a></li>
+              <li class="header__item"><a class="header__link" href="#">Supplement</a></li>
+              <li class="header__item"><a class="header__link" href="#">Inquire</a></li>
             </ul>
           </nav>
 
@@ -43,10 +41,10 @@
       <main class="main-content">
 
 
-        <!-- showcase section -->
-        <section class="showcase">
+        <!-- intro section -->
+        <section class="intro">
 
-          <div class="showcase__popup popup">
+          <div class="popup intro__popup">
             <div class="popup__overlay"></div>
             <button class="popup__close-btn">
               <img src="assets/img/close.svg" alt="close">
@@ -63,58 +61,58 @@
             </div>
           </div>
 
-          <div class="showcase__container container">
-            <div class="showcase__caption">
+          <div class="container intro__container">
+            <div class="intro__caption">
 
-              <div class="heading showcase__heading heading_line-left">
-                <div class="showcase__wrapper">
-                  <h1>Do It Now</h1>
-                  <span>Or You Never Get It Back</span>
+              <div class="accented-line accented-line_left intro__accented-line">
+                <div class="intro__wrapper">
+                  <h1 class="intro__heading">Do It Now</h1>
+                  <span class="intro__subheading">Or You Never Get It Back</span>
                 </div>
               </div>
 
-              <p class="showcase__desc">
+              <p class="intro__desc">
                 Lorem ipsum dolor sit amet, consectetuer
                 adipiscing elit, sed diam nonummy nibh euismod tincidunt.
               </p>
 
-              <div class="showcase__buttons buttons">
-                <button class="button showcase__button">ORDER NOW</button>
-                <a class="buttons__video" href="#">
+              <div>
+                <button class="intro__button button">ORDER NOW</button>
+                <a class="intro__video" href="#">
                   <nobr>Watch The Video</nobr>
-                  <img src="assets/img/play.png" alt="">
+                  <span class="intro__play-icon"></span>
                 </a>
               </div>
 
             </div>
-            <img class="showcase__image" src="assets/img/Layer_25.png" alt="Adele products">
+            <img class="intro__image" src="assets/img/Layer_25.png" alt="Adele products">
           </div>
 
-        </section> <!-- end showcase section -->
+        </section> <!-- end intro section -->
 
 
         <!-- numbers section -->
         <section class="numbers">
           <div class="numbers__wrap">
-            <div class="numbers__container container">
+            <div class="container numbers__container">
 
               <img class="numbers__img" src="assets/img/Layer_9.png" alt="Adele product">
 
               <div class="numbers__box">
                 <div class="numbers__item">
-                  <span class="numbers__counter heading heading_line-left">0</span>
+                  <span class="accented-line accented-line_left numbers__counter">0</span>
                   <p class="numbers__text numbers__text_blue">MG</p>
                   <p class="numbers__text">Per Capsule</p>
                 </div>
 
                 <div class="numbers__item">
-                  <span class="numbers__counter heading heading_line-left">0</span>
+                  <span class="accented-line accented-line_left numbers__counter">0</span>
                   <p class="numbers__text numbers__text_blue">Capsules</p>
                   <p class="numbers__text">Per Bottle</p>
                 </div>
 
                 <div class="numbers__item">
-                  <span class="numbers__counter heading heading_line-left">0</span>
+                  <span class="accented-line accented-line_left numbers__counter">0</span>
                   <p class="numbers__text numbers__text_blue">Plus</p>
                   <p class="numbers__text">Satisfied Customers</p>
                 </div>
@@ -127,9 +125,9 @@
 
         <!-- features section -->
         <section class="features">
-          <div class="features__container container">
+          <div class="container features__container">
 
-            <div class="features__title title title_black">
+            <div class="title title_black features__title">
               <h2 class="title__head">Features
                 <span class="title__head_slim"><nobr>We Offer</nobr></span>
               </h2>
@@ -138,22 +136,22 @@
 
             <div class="features__box">
               <div class="features__item features__item_left">
-                <h3 class="features__subtitle heading heading_line-right">Increased Energy</h3>
+                <h3 class="accented-line accented-line_right features__subtitle">Increased Energy</h3>
                 <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit, sed diam nonu</p>
               </div>
               
               <div class="features__item features__item_left">
-                <h3 class="features__subtitle heading heading_line-right">Weight Loss</h3>
+                <h3 class="accented-line accented-line_right features__subtitle">Weight Loss</h3>
                 <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit, sed diam nonu</p>
               </div>
 
               <div class="features__item features__item_right">
-                <h3 class="features__subtitle heading heading_line-left">Bone Builder</h3>
+                <h3 class="accented-line accented-line_left features__subtitle">Bone Builder</h3>
                 <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit, sed diam nonu</p>
               </div>
 
               <div class="features__item features__item_right">
-                <h3 class="features__subtitle heading heading_line-left">Stress Release</h3>
+                <h3 class="accented-line accented-line_left features__subtitle">Stress Release</h3>
                 <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit, sed diam nonu</p>
               </div>
 
@@ -164,48 +162,46 @@
         </section> <!-- end features section -->
 
 
-        <!-- results section -->
-        <section class="results">
-          <div class="results__container container">
+        <!-- real-results section -->
+        <section class="real-results">
+          <div class="container real-results__container">
 
-            <div class="results__title title title_black">
+            <div class="title title_black real-results__title">
               <h2 class="title__head">Real Man
                 <span class="title__head_slim"><nobr>Real Results</nobr></span>
               </h2>
               <p class="title__desc">Don’t forget to check these real success.</p>
             </div>
 
-            <div class="results__slider slider">
-              <button class="slider__control slider__control_prev">
-                <img src="assets/img/prev-control.svg" alt="Prev-control">
-              </button>
+            <div class="slider real-results__slider">
+              <button class="slider__control slider__control_prev">Previous</button>
 
               <div class="slider__wrap">
                 <div class="slider__slides">
                   <div class="slider__item">
 
-                    <div class="results__person">
-                      <div class="results__wrap results__wrap_row">
-                        <img class="results__photo results__photo_before"
+                    <div class="real-results__person">
+                      <div class="real-results__wrap real-results__wrap_row">
+                        <img class="real-results__photo real-results__photo_before"
                              src="assets/img/photo-before.jpg" alt="Before">
-                        <img class="results__photo results__photo_after"
+                        <img class="real-results__photo real-results__photo_after"
                              src="assets/img/photo-after.jpg" alt="After">
                       </div>
 
-                      <div class="results__wrap results__wrap_col">
-                        <div class="results__wrap results__wrap_row">
-                          <div class="results__weight results__weight_before">
-                            <span class="results__kg">87</span><span>KG</span>
+                      <div class="real-results__wrap real-results__wrap_col">
+                        <div class="real-results__wrap real-results__wrap_row">
+                          <div class="real-results__weight real-results__weight_before">
+                            <span class="real-results__kg">87</span><span>KG</span>
                             <p>Before</p>
                           </div>
-                          <div class="results__weight results__weight_after">
-                            <span class="results__kg">63</span><span>KG</span>
+                          <div class="real-results__weight real-results__weight_after">
+                            <span class="real-results__kg">63</span><span>KG</span>
                             <p>After</p>
                           </div>
                         </div>
 
-                        <div class="results__person-information heading heading_line-left">
-                          <div class="results__wrap results__wrap_col">
+                        <div class="accented-line accented-line_left real-results__person-information">
+                          <div class="real-results__wrap real-results__wrap_col">
                             <h3>Mike Andersen</h3>
                             <span>Age: 28</span>
                           </div>
@@ -217,28 +213,28 @@
   
                   <div class="slider__item">
 
-                    <div class="results__person">
-                      <div class="results__wrap results__wrap_row">
-                        <img class="results__photo results__photo_before"
+                    <div class="real-results__person">
+                      <div class="real-results__wrap real-results__wrap_row">
+                        <img class="real-results__photo real-results__photo_before"
                               src="assets/img/photo-before.jpg" alt="Before">
-                        <img class="results__photo results__photo_after"
+                        <img class="real-results__photo real-results__photo_after"
                               src="assets/img/photo-after.jpg" alt="After">
                       </div>
 
-                      <div class="results__wrap results__wrap_col">
-                        <div class="results__wrap results__wrap_row">
-                          <div class="results__weight results__weight_before">
-                            <span class="results__kg">87</span><span>KG</span>
+                      <div class="real-results__wrap real-results__wrap_col">
+                        <div class="real-results__wrap real-results__wrap_row">
+                          <div class="real-results__weight real-results__weight_before">
+                            <span class="real-results__kg">87</span><span>KG</span>
                             <p>Before</p>
                           </div>
-                          <div class="results__weight results__weight_after">
-                            <span class="results__kg">63</span><span>KG</span>
+                          <div class="real-results__weight real-results__weight_after">
+                            <span class="real-results__kg">63</span><span>KG</span>
                             <p>After</p>
                           </div>
                         </div>
 
-                        <div class="results__person-information heading heading_line-left">
-                          <div class="results__wrap results__wrap_col">
+                        <div class="accented-line accented-line_left real-results__person-information">
+                          <div class="real-results__wrap real-results__wrap_col">
                             <h3>Mike Andersen</h3>
                             <span>Age: 28</span>
                           </div>
@@ -250,28 +246,28 @@
   
                   <div class="slider__item">
 
-                    <div class="results__person">
-                      <div class="results__wrap results__wrap_row">
-                        <img class="results__photo results__photo_before"
+                    <div class="real-results__person">
+                      <div class="real-results__wrap real-results__wrap_row">
+                        <img class="real-results__photo real-results__photo_before"
                               src="assets/img/photo-before.jpg" alt="Before">
-                        <img class="results__photo results__photo_after"
+                        <img class="real-results__photo real-results__photo_after"
                               src="assets/img/photo-after.jpg" alt="After">
                       </div>
 
-                      <div class="results__wrap results__wrap_col">
-                        <div class="results__wrap results__wrap_row">
-                          <div class="results__weight results__weight_before">
-                            <span class="results__kg">87</span><span>KG</span>
+                      <div class="real-results__wrap real-results__wrap_col">
+                        <div class="real-results__wrap real-results__wrap_row">
+                          <div class="real-results__weight real-results__weight_before">
+                            <span class="real-results__kg">87</span><span>KG</span>
                             <p>Before</p>
                           </div>
-                          <div class="results__weight results__weight_after">
-                            <span class="results__kg">63</span><span>KG</span>
+                          <div class="real-results__weight real-results__weight_after">
+                            <span class="real-results__kg">63</span><span>KG</span>
                             <p>After</p>
                           </div>
                         </div>
 
-                        <div class="results__person-information heading heading_line-left">
-                          <div class="results__wrap results__wrap_col">
+                        <div class="accented-line accented-line_left real-results__person-information">
+                          <div class="real-results__wrap real-results__wrap_col">
                             <h3>Mike Andersen</h3>
                             <span>Age: 28</span>
                           </div>
@@ -283,23 +279,21 @@
                 </div>
               </div>
 
-              <button class="slider__control slider__control_next">
-                <img src="assets/img/next-control.svg" alt="Next-control">
-              </button>
+              <button class="slider__control slider__control_next">Next</button>
 
               <!-- dots generating by js -->
-              <div class="slider__dots"></div>
+              <div class="slider__dots js-slider__dots"></div>
             </div>
 
           </div>
-        </section><!-- end results section -->
+        </section><!-- end real-results section -->
 
 
       </main> <!-- end main content -->
 
     <footer></footer>
 
-  </div> <!-- end main wrapper -->
+  </div> <!-- end main container -->
 
 </body>
 </html>

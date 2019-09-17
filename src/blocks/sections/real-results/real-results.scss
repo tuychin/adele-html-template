@@ -1,6 +1,6 @@
-// results style
+// real-results style
 
-.results {
+.real-results {
   padding-top: 100px;
   background-color: #fff;
   &__title {
@@ -69,7 +69,7 @@
 }
 
 @media screen and (max-width: $smDesktopWidth) {
-  .results {
+  .real-results {
     padding-top: 50px;
     &__person {
       flex-wrap: wrap;
@@ -102,12 +102,4 @@
       }
     }
   }
-}
-
-@media screen and (min-width: $phoneWidth) and (max-width: $tableWidth) {  
-  
-}
-
-@media screen and (max-width: $phoneWidth) {
-  
 }

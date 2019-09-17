@@ -5,45 +5,75 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ebebeb;
-}
+  }
+
   &__logo {
     margin: 1em 0em;
-  }
-}
-
-.logo {
-  display: inline-block;
-  a {
     display: flex;
     flex-wrap: nowrap;
   }
   &__image {
     @include size(68px);
   }
-  &__text {
+  &__company {
     font-family: $headingFont;
     font-weight: 700;
     color: $secondary-color;
     align-self: center;
     margin-left: 0.5em;
   }
-}
 
-.toggle-btn {
-  @include size(46px, 40px);
-  cursor: pointer;
-  display: flex;
-  margin: 2em 0;
-  background: transparent;
-  align-items: center;
-
-  &_hidden-desktop {
-    display: none;
+  &__navbar {
+    display: flex;
+    align-self: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+  }
+  &__items-list {
+    display: flex;
+  }
+  &__item {
+    margin-left: 2em;
+    font-weight: 700;
+  }
+  &__link {
+    color: $font-color;
+    transition: color .5s ease;
+  }
+  &__link:hover {
+    color: $primary-color;
   }
 
-  span,
-  span::before,
-  span::after {
+  &__toggle-btn {
+    @include size(46px, 40px);
+    cursor: pointer;
+    display: flex;
+    margin: 2em 0;
+    background: transparent;
+    align-items: center;
+    &_hidden_desktop {
+      display: none;
+    }
+    &_open {
+      .header__hamburger {
+        transform: rotate(45deg);
+      }
+      .header__hamburger::before {
+        top: 0;
+        transform: rotate(0);
+        visibility: hidden;
+      }
+      .header__hamburger::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &__hamburger,
+  &__hamburger::before,
+  &__hamburger::after {
     display: block;
     position: absolute;
     width: 35px;
@@ -52,54 +82,14 @@
     background-color: $font-color;
     transition-duration: .2s;
   }
-  span::before {
+  &__hamburger::before {
     content: '';
     top: -12px;
   }
-  span::after {
+  &__hamburger::after {
     content: '';
     top: 12px;
   }
-
-  &_open {
-    span {
-      transform: rotate(45deg);
-    }
-    span::before {
-      top: 0;
-      transform: rotate(0);
-      visibility: hidden;
-    }
-    span::after {
-      top: 0;
-      transform: rotate(90deg);
-    }
-  }
-}
-
-.navbar {
-  display: flex;
-  align-self: center;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  width: 100%;
-  overflow: hidden;
-
-  &__list {
-    display: flex;
-  }
-  &__item {
-    margin-left: 2em;
-    font-weight: 700;
-  }
-  &__item > a {
-    color: $font-color;
-    transition: color .5s ease;
-  }
-  &__item > a:hover {
-    color: $primary-color;
-  }
-
 }
 
 @media screen and (max-width: $tableWidth) {
@@ -107,22 +97,16 @@
     &__container {
       flex-wrap: wrap;
     }
-  }
-
-  .toggle-btn {
-    display: block;
-    padding-bottom: 5px;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    height: 0;
-    transition: height .2s ease-in-out;
-    &_open {
-      height: 330px;
+    &__navbar {
+      display: flex;
+      flex-direction: column;
+      height: 0;
+      transition: height .2s ease-in-out;
+      &_open {
+        height: 330px;
+      }
     }
-    &__list {
+    &__items-list {
       flex-direction: column;
       flex-grow: 1;
       align-self: center;
@@ -132,6 +116,10 @@
       margin-bottom: 2em;
       margin-left: 0em;
       font-size: 1.5rem;
+    }
+    &__toggle-btn {
+      display: block;
+      padding-bottom: 5px;
     }
   }
 }
