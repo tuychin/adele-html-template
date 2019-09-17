@@ -6,23 +6,33 @@
   font-weight: 900;
   color: $secondary-color;
   text-transform: uppercase;
-  &_line_left::before {
-    width: 5px;
-    content: "";
-    display: inline-block;
-    margin-right: 1rem;
-    border-radius: 10px;
-    background-color: $primary-color;
-  }
-  &_line_right {
-    justify-content: flex-end;
-  }
-  &_line_right::after {
-    width: 5px;
-    content: "";
-    display: inline-block;
-    margin-left: 1rem;
-    border-radius: 10px;
-    background-color: $primary-color;
+  &_line {
+    &_right {
+      justify-content: flex-end;
+      &::after {
+        width: 5px;
+        content: "";
+        display: inline-block;
+        margin-left: 1rem;
+        border-radius: 10px;
+        background-color: $primary-color;
+      }
+    }
+    &_left::before {
+      width: 5px;
+      content: "";
+      display: inline-block;
+      margin-right: 1rem;
+      border-radius: 10px;
+      background-color: $primary-color;
+    }
+    &_bottom::after {
+      height: 5px;
+      width: 100%;
+      content: "";
+      display: inline-block;
+      border-radius: 10px;
+      background-color: $primary-color;
+    }
   }
 }

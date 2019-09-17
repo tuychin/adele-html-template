@@ -171,6 +171,10 @@ function sliderInit(container) {
         dot.classList.remove('slider__dot_active');
       }
 
+      if (dotsCollection.length === 1) {
+        dot.classList.add('slider__dot_active');
+      }
+
     }
   }
 
