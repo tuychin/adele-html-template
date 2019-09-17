@@ -59,12 +59,12 @@
     font-size: 40px;
     font-weight: 700;
   }
-  &__person-information {
+  &__person-info {
     margin: 1rem;
     font-size: 1rem;
-    span {
-      font-weight: 300;
-    }
+  }
+  &__person-age {
+    font-weight: 300;
   }
 }
 

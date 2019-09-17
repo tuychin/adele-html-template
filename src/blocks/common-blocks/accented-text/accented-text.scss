@@ -1,12 +1,12 @@
-// accented-line style
+// accented-text style
 
-.accented-line {
+.accented-text {
   display: flex;
   flex-wrap: nowrap;
   font-weight: 900;
   color: $secondary-color;
   text-transform: uppercase;
-  &_left::before {
+  &_line_left::before {
     width: 5px;
     content: "";
     display: inline-block;
@@ -14,10 +14,10 @@
     border-radius: 10px;
     background-color: $primary-color;
   }
-  &_right {
+  &_line_right {
     justify-content: flex-end;
   }
-  &_right::after {
+  &_line_right::after {
     width: 5px;
     content: "";
     display: inline-block;
