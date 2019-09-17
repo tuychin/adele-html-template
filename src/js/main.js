@@ -7,3 +7,5 @@ import '../blocks/common-blocks/slider/slider.js';
 
 // sections
 import '../blocks/sections/numbers/numbers.js';
+import '../blocks/sections/real-results/real-results.js';
+import '../blocks/sections/testimonials/testimonials.js';

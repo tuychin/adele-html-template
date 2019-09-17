@@ -9,7 +9,10 @@
     }
   }
   &_white {
-    color: #fff;
+    color: $light-color ;
+    .title__desc {
+      color: $light-color;
+    }
   }
   &__head {
     margin-bottom: rem(20);

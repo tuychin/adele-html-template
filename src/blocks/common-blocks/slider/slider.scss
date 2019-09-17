@@ -72,8 +72,8 @@ $slider-height: 100%;
     display: inline-block;
     margin: 1rem;
     border-radius: 50px;
-    background-color: $secondary-color;
-    opacity: .3;
+    background-color: $font-color;
+    opacity: .5;
     &_active {
       background-color: $primary-color;
       opacity: 1;
@@ -116,7 +116,7 @@ $slider-height: 100%;
     &__arrow {
       @include size(30px);
       margin: .5rem;
-      opacity: .3;
+      opacity: .5;
       &_left {
         background-image: url(/assets/img/arrow-left.svg);
       }
@@ -147,7 +147,7 @@ $slider-height: 100%;
     &__arrow {
       @include size(30px);
       margin: .5rem;
-      opacity: .3;
+      opacity: .5;
       &_left {
         background-image: url(/assets/img/arrow-left.svg);
       }

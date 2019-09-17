@@ -1,0 +1,30 @@
+// testimonials style
+
+.testimonials {
+  padding: 100px 0;
+  background-color: #0f0816;
+  background-image: url(/assets/img/testimonials-background.png);
+  &__container {
+
+  }
+  &__title {
+
+  }
+  &__slider {
+
+  }
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .testimonials {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (min-width: $phoneWidth) and (max-width: $tableWidth) {  
+
+}
+
+@media screen and (max-width: $phoneWidth) {
+
+}
