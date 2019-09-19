@@ -48,7 +48,7 @@ ul, li {
 }
 
 section, .section {
-  padding: 50px 0;
+  padding: 100px 0;
   @media screen and (max-width: $desktopWidth) {
     padding: 50px 0;
   }
@@ -107,3 +107,4 @@ section, .section {
 @import "../blocks/sections/features/features.scss";
 @import "../blocks/sections/real-results/real-results.scss";
 @import "../blocks/sections/testimonials/testimonials.scss";
+@import "../blocks/sections/facts/facts.scss";

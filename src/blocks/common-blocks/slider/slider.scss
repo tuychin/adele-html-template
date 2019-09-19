@@ -47,10 +47,10 @@ $slider-height: 100%;
     cursor: pointer;
     transition: all .1s ease;
     &_prev {
-      background-image: url(/assets/img/icons/control-prev.svg);
+      background-image: url(/assets/img/slider/control-prev.svg);
     }
     &_next {
-      background-image: url(/assets/img/icons/control-next.svg);
+      background-image: url(/assets/img/slider/control-next.svg);
     }
     &_prev:active {
       background-size: 60px 60px;
@@ -118,10 +118,10 @@ $slider-height: 100%;
       margin: .5rem;
       opacity: .5;
       &_left {
-        background-image: url(/assets/img/icons/arrow-left.svg);
+        background-image: url(/assets/img/slider/arrow-left.svg);
       }
       &_right {
-        background-image: url(/assets/img/icons/arrow-right.svg);
+        background-image: url(/assets/img/slider/arrow-right.svg);
       }
     }
   }
@@ -149,10 +149,10 @@ $slider-height: 100%;
       margin: .5rem;
       opacity: .5;
       &_left {
-        background-image: url(/assets/img/icons/arrow-left.svg);
+        background-image: url(/assets/img/slider/arrow-left.svg);
       }
       &_right {
-        background-image: url(/assets/img/icons/arrow-right.svg);
+        background-image: url(/assets/img/slider/arrow-right.svg);
       }
     }
   }

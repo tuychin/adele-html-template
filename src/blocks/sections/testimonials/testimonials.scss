@@ -1,12 +1,14 @@
 // testimonials style
 
 .testimonials {
-  padding: 100px 0;
   color: $light-color;
   background-color: #0f0816;
-  background-image: url(/assets/img/backgrounds/testimonials-background.png);
+  background-image: url(/assets/img/testimonials/testimonials-background.png);
   background-position: center;
   background-repeat: no-repeat;
+  &__title {
+    margin-bottom: 70px;
+  }
   &__slider {
     justify-content: center;
     .slider__control {
@@ -17,10 +19,10 @@
       margin: .5rem;
       opacity: .5;
       &_left {
-        background-image: url(/assets/img/icons/arrow-left.svg);
+        background-image: url(/assets/img/slider/arrow-left.svg);
       }
       &_right {
-        background-image: url(/assets/img/icons/arrow-right.svg);
+        background-image: url(/assets/img/slider/arrow-right.svg);
       }
     }
   }
@@ -41,10 +43,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  &__avatar {
-    width: 65px;
-    height: 73px;
   }
   &__accented-text {
     margin: 1rem;
@@ -70,6 +68,8 @@
 
 @media screen and (max-width: $smDesktopWidth) {
   .testimonials {
-    padding: 50px 0;
+    &__title {
+      margin-bottom: 40px;
+    }
   }
 }

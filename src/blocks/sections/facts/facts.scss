@@ -1,0 +1,131 @@
+// facts style
+
+.facts {
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__tabs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: $secondary-color;
+  }
+  &__tabs-head {
+    width: 450px;
+    padding-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    font-family: Lato;
+    border-bottom: 5px solid $secondary-color;
+    text-transform: uppercase;
+  }
+  &__tabs-title {
+    font-size: rem(24);
+    font-weight: 700;
+  }
+  &__serving {
+    font-weight: 700;
+  }
+  &__tabs-list {
+    margin: 2rem 0;
+  }
+  &__tab {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $light-color;
+    cursor: pointer;
+    transition: all .5s ease;
+    &:hover {
+      background-color: $light-color;
+    }
+    &_active {
+      background-color: #fff;
+      box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+      cursor: auto;
+      &:hover {
+        background-color: #fff;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+      }
+    }
+  }
+  &__content-list {
+    width: 350px;
+    overflow: hidden;
+  }
+  &__content {
+    position: absolute;
+    top: -50%;
+    z-index: -1;
+    opacity: 0;
+    &_active {
+      position: relative;
+      top: 0;
+      z-index: 1;
+      opacity: 1;
+      transition: opacity .5s ease;
+    }
+  }
+  &__img {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__accented-text {
+    margin: 2rem 0;
+  }
+  &__content-title {
+    display: flex;
+    flex-direction: column;
+    font-family: Lato;
+    &_slim {
+      font-weight: 300;
+    }
+  }
+  &__button {
+    height: 50px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  &__wrap {
+    display: flex;
+    &_col {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .facts {
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__tabs {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &__tabs-head {
+      max-width: 450px;
+      width: 100%;
+    }
+    &__content-list {
+      max-width: 450px;
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    &__img {
+      display: none;
+    }
+    &__wrap {
+      &_col {
+        max-width: 450px;
+        width: 100%;
+      }
+    }
+  }
+}
