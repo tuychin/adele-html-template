@@ -1,0 +1,55 @@
+// supplement style
+
+.supplement {
+  background-color: #fff;
+  background-image: url(/assets/img/supplement/supplement-background.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+  }
+  &__img {
+    position: relative;
+    right: 100px;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 700;
+    &_slim {
+      font-family: Lato;
+      font-size: 20px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+  &__text {
+    margin: 2rem 0;
+  }
+  &__button {
+    max-width: 182px;
+  }
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .supplement {
+    background-image: none;
+    &__img {
+      display: none;
+    }
+    &__button {
+      align-self: center;
+    }
+  }
+}

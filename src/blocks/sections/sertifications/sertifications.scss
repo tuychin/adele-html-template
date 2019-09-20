@@ -4,7 +4,7 @@
   background-color: #f1f4f5;
   &__box {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
   }
@@ -23,6 +23,9 @@
 
 @media screen and (max-width: $smDesktopWidth) {
   .sertifications {
+    &__box {
+      flex-wrap: wrap;
+    }
     &__item {
     padding: 1rem;
     &_border_right:not(:last-child) {
