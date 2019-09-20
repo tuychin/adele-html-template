@@ -1,0 +1,33 @@
+// sertifications style
+
+.sertifications {
+  background-color: #f1f4f5;
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    width: 200px;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    &_border_right:not(:last-child) {
+      border-right: 2px solid #dcdcdc;
+    }
+  }
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .sertifications {
+    &__item {
+    padding: 1rem;
+    &_border_right:not(:last-child) {
+        border-right: none;
+      }
+    }
+  }
+}
