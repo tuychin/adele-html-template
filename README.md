@@ -7,4 +7,4 @@
   <p>100% ADAPTIVE!</p>
 </div>
 
-Link: [...]()
+Link: [tuychin.ru](http://tuychin.ru/)
