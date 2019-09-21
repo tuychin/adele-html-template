@@ -4,12 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <title>Adele landing page</title>
 </head>
 <body>
   
   <!-- main container -->
   <div class="main-wrapper">
+
+
 
       <!-- header -->
       <header class="header">
@@ -26,16 +34,18 @@
     
           <nav class="header__navbar">
             <ul class="header__items-list">
-              <li class="header__item"><a class="header__link" href="#">Features</a></li>
-              <li class="header__item"><a class="header__link" href="#">Real-results</a></li>
-              <li class="header__item"><a class="header__link" href="#">Testimonials</a></li>
-              <li class="header__item"><a class="header__link" href="#">Facts</a></li>
-              <li class="header__item"><a class="header__link" href="#">Inquire</a></li>
+              <li class="header__item"><a class="header__link" href="/">Features</a></li>
+              <li class="header__item"><a class="header__link" href="/">Real-results</a></li>
+              <li class="header__item"><a class="header__link" href="/">Testimonials</a></li>
+              <li class="header__item"><a class="header__link" href="/">Facts</a></li>
+              <li class="header__item"><a class="header__link" href="/">Contact</a></li>
             </ul>
           </nav>
 
         </div>
       </header> <!-- end header -->
+
+
 
       <!-- main content -->
       <main class="main-content">
@@ -637,9 +647,136 @@
 
 
 
+        <!-- subscribe section -->
+        <section class="subscribe">
+          <div class="container subscribe__container">
+
+            <div class="title title_white subscribe__title">
+              <h2 class="title__head">Subscribe
+                <span class="title__head_slim"><nobr>for tips & Offers</nobr></span>
+              </h2>
+              <p class="title__desc">We regularly knock our customers with useful tips and offers.</p>
+            </div>
+
+            <form class="subscribe__form" action="/login" method="post">
+              <input
+                class="subscribe__email"
+                type="email"
+                placeholder="Enter Your Email"
+                name="email"
+                required>
+
+              <input
+                class="button subscribe__button"
+                type="submit"
+                value="Subscribe"
+                name="subscribe">
+
+              <input type="hidden" name="subscribe" value="">
+            </form>
+
+          </div>
+        </section><!-- end subscribe section -->
+
+
+
+        <!-- contact section -->
+        <section class="contact">
+          <div class="container contact__container">
+
+            <div class="title title_black contact__title">
+              <h2 class="title__head">Inquire
+                <span class="title__head_slim"><nobr>Your Issue</nobr></span>
+              </h2>
+              <p class="title__desc">We’re always happy to reply our customers.</p>
+            </div>
+
+            <form class="contact-form contact__contact-form" action="/login" method="post">
+              <input type="hidden" name="contact" value="">
+
+              <div class="contact-form__wrap">
+                <input
+                  class="contact-form__name"
+                  type="text"
+                  placeholder="Name"
+                  name="name"
+                  required>
+
+                <input
+                  class="contact-form__email"
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  required>
+              </div>
+
+              <input
+                class="contact-form__subject"
+                type="text"
+                placeholder="Subject"
+                name="subject"
+                required>
+
+              <textarea class="contact-form__textarea" name="text" rows="5"></textarea>
+
+              <input
+                class="button contact-form__button"
+                type="submit"
+                value="Send"
+                name="send">
+            </form>
+
+          </div>
+        </section><!-- end contact section -->
+
+
+
       </main> <!-- end main content -->
 
-    <footer></footer>
+
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__wrap footer__wrap_col">
+
+            <span class="footer__copyright">
+              Developed by
+              <a href="https://github.com/tuychin" rel="nofollow" target="_blank">
+                Tuychin
+              </a>
+            </span>
+
+            <div class="footer__wrap footer__wrap_row">
+              <a class="footer__link" href="/">About</a>
+              <a class="footer__link" href="/">Terms</a>
+              <a class="footer__link" href="/">Privacy</a>
+            </div>
+            
+          </div>
+
+          <div class="footer__wrap footer__wrap_row">
+            <div class="footer__social-item">
+              <a href="https://vk.com/r.tuychin" rel="nofollow" target="_blank">
+                <i class="fa fa-vk"></i>
+              </a>
+            </div>
+            <div class="footer__social-item">
+              <a href="https://www.instagram.com/tuychin.r/" rel="nofollow" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </div>
+            <div class="footer__social-item">
+              <a href="https://www.facebook.com/r.tuychin" rel="nofollow" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </footer> <!-- end footer -->
+
+
 
   </div> <!-- end main container -->
 

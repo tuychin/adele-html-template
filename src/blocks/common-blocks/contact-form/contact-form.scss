@@ -1,0 +1,65 @@
+// contact-form style
+
+$contactFormColor: #ebebeb;
+@mixin inputsStyle {
+  width: 100%;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  color: $font-color;
+  font-family: Lato;
+  font-size: 16px;
+  
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $contactFormColor;
+  transition: border-bottom-color 1s ease;
+  &:focus {
+    border-bottom-color: $primary-color;
+  }
+}
+
+.contact-form {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $contactFormColor;
+  &__wrap {
+    width: 100%;
+    display: flex;
+  }
+  &__name {
+    @include inputsStyle();
+    margin-right: 1rem;
+  }
+  &__email {
+    @include inputsStyle();
+    margin-left: 1rem;
+  }
+  &__subject {
+    @include inputsStyle();
+  }
+  &__textarea {
+    @include inputsStyle();
+    margin-bottom: 3rem;
+  }
+  &__button {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: $tableWidth) {
+  .contact-form {
+    width: 100%;
+    &__wrap {
+      flex-wrap: wrap;
+    }
+    &__name {
+      margin-right: 0;
+    }
+    &__email {
+      margin-left: 0;
+    }
+  }
+}

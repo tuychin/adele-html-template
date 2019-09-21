@@ -1,0 +1,14 @@
+// contact style
+
+.contact {
+  background-color: #fff;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+}
