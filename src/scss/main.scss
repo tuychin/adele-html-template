@@ -5,6 +5,7 @@
 @import "utils/reset";
 
 html {
+  scroll-behavior: smooth;
   line-height: $mainLineHeight;
 	font-size: $mainFontSize;
 	color: $font-color;

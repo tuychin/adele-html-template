@@ -21,7 +21,6 @@ ready(() => {
     }
   
     headerLogo.addEventListener('click', (e) => {
-      e.preventDefault();
       navbar.classList.remove('header__navbar_open');
       toggleBtn.classList.remove('header__toggle-btn_open');
     });
