@@ -2,29 +2,41 @@
 
 import { videoOff } from '../../../js/utils';
 
-function modal(container) {
-  const popupBtn = container.querySelector('.intro__video');
-  const popup = container.querySelector('.popup');
+function modal(container, trigger) {
   const closeBtn = container.querySelector('.popup__close-btn')
-  const overlay = popup.querySelector('.popup__overlay');
-  const popupVideo = popup.querySelector('iframe');
+  const overlay = container.querySelector('.popup__overlay');
+  const popupVideo = container.querySelector('iframe');
   
-  popupBtn.addEventListener('click', (e) => {
-    videoOff(popupVideo);
+  trigger.addEventListener('click', (e) => {
+
+    if (popupVideo) {
+      videoOff(popupVideo);
+    }
+
     e.preventDefault();
-    popup.classList.toggle('popup_open');
+    container.classList.toggle('popup_open');
     document.body.style.overflow = 'hidden';
   });
   
+
   overlay.addEventListener('click', (e) => {
-    videoOff(popupVideo);
-    popup.classList.remove('popup_open');
+
+    if (popupVideo) {
+      videoOff(popupVideo);
+    }
+
+    container.classList.remove('popup_open');
     document.body.style.overflow = 'visible';
   });
   
+
   closeBtn.addEventListener('click', (e) => {
-    videoOff(popupVideo);
-    popup.classList.remove('popup_open');
+
+    if (popupVideo) {
+      videoOff(popupVideo);
+    }
+
+    container.classList.remove('popup_open');
     document.body.style.overflow = 'visible';
   });
 }

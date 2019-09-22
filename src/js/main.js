@@ -12,3 +12,4 @@ import '../blocks/sections/numbers/numbers.js';
 import '../blocks/sections/real-results/real-results.js';
 import '../blocks/sections/testimonials/testimonials.js';
 import '../blocks/sections/facts/facts.js';
+import '../blocks/sections/supplement/supplement.js';

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
 
   <meta name="keywords" content="">
   <meta name="description" content="">
+  <link rel="canonical" href="http://adele.tuychin.ru" />
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -55,7 +56,47 @@
         <!-- intro section -->
         <section class="intro" id="intro">
 
-          <div class="popup intro__popup">
+          <div class="popup intro__popup-form">
+            <div class="popup__overlay"></div>
+            <button class="popup__close-btn"></button>
+            <div class="popup__content">
+
+              <form class="contact-form intro__contact-form" action="/login" method="post">
+                <input type="hidden" name="contact" value="">
+  
+                <div class="contact-form__wrap">
+                  <input
+                    class="contact-form__name"
+                    type="text"
+                    placeholder="Name"
+                    name="name"
+                    required>
+  
+                  <input
+                    class="contact-form__phone"
+                    type="tel"
+                    placeholder="Phone"
+                    name="phone"
+                    required>
+                </div>
+  
+                <textarea
+                  class="contact-form__textarea"
+                  placeholder="Your wishes"
+                  name="text"
+                  rows="5"></textarea>
+  
+                <input
+                  class="button contact-form__button"
+                  type="submit"
+                  value="Send"
+                  name="send">
+              </form>
+
+            </div>
+          </div>
+
+          <div class="popup intro__popup-video">
             <div class="popup__overlay"></div>
             <button class="popup__close-btn"></button>
             <div class="popup__content">
@@ -87,12 +128,12 @@
 
               <div>
                 <button class="button intro__button">ORDER NOW</button>
-                <a class="intro__video" href="#">
-                  <nobr>
-                  Watch The Video
-                  <span class="intro__play-icon"></span>
-                  </nobr>
-                </a>
+                <nobr>
+                  <a class="intro__video-btn" href="#">
+                    Watch The Video
+                    <span class="intro__play-icon"></span>
+                  </a>
+                </nobr>
               </div>
 
             </div>
@@ -113,19 +154,19 @@
               <div class="numbers__box">
                 <div class="numbers__item">
                   <span class="accented-text accented-text_line_left numbers__counter">0</span>
-                  <p class="numbers__text numbers__text_blue">MG</p>
+                  <h2 class="numbers__text numbers__text_blue">MG</h2>
                   <p class="numbers__text">Per Capsule</p>
                 </div>
 
                 <div class="numbers__item">
                   <span class="accented-text accented-text_line_left numbers__counter">0</span>
-                  <p class="numbers__text numbers__text_blue">Capsules</p>
+                  <h2 class="numbers__text numbers__text_blue">Capsules</h2>
                   <p class="numbers__text">Per Bottle</p>
                 </div>
 
                 <div class="numbers__item">
                   <span class="accented-text accented-text_line_left numbers__counter">0</span>
-                  <p class="numbers__text numbers__text_blue">Plus</p>
+                  <h2 class="numbers__text numbers__text_blue">Plus</h2>
                   <p class="numbers__text">Satisfied Customers</p>
                 </div>
               </div>
@@ -142,7 +183,9 @@
 
             <div class="title title_black features__title">
               <h2 class="title__head">Features
-                <span class="title__head_slim"><nobr>We Offer</nobr></span>
+                <nobr>
+                  <span class="title__head_slim">We Offer</span>
+                </nobr>
               </h2>
               <p class="title__desc">Don’t forget to check these real success.</p>
             </div>
@@ -182,7 +225,9 @@
 
             <div class="title title_black real-results__title">
               <h2 class="title__head">Real Man
-                <span class="title__head_slim"><nobr>Real Results</nobr></span>
+                <nobr>
+                  <span class="title__head_slim">Real Results</span>
+                </nobr>
               </h2>
               <p class="title__desc">Don’t forget to check these real success.</p>
             </div>
@@ -312,7 +357,9 @@
 
             <div class="title title_white testimonials__title">
               <h2 class="title__head">Client
-                <span class="title__head_slim"><nobr>Testimonials</nobr></span>
+                <nobr>
+                  <span class="title__head_slim">Testimonials</span>
+                </nobr>
               </h2>
               <p class="title__desc">We don’t just sell, we’re beloved too.</p>
             </div>
@@ -430,7 +477,9 @@
 
             <div class="title title_black facts__title">
               <h2 class="title__head">Supplement
-                <span class="title__head_slim"><nobr>Facts</nobr></span>
+                <nobr>
+                  <span class="title__head_slim">Facts</span>
+                </nobr>
               </h2>
               <p class="title__desc">We don’t just sell, we’re beloved too.</p>
             </div>
@@ -653,7 +702,9 @@
 
             <div class="title title_white subscribe__title">
               <h2 class="title__head">Subscribe
-                <span class="title__head_slim"><nobr>for tips & Offers</nobr></span>
+                <nobr>
+                  <span class="title__head_slim">for tips & Offers</span>
+                </nobr>
               </h2>
               <p class="title__desc">We regularly knock our customers with useful tips and offers.</p>
             </div>
@@ -686,7 +737,9 @@
 
             <div class="title title_black contact__title">
               <h2 class="title__head">Inquire
-                <span class="title__head_slim"><nobr>Your Issue</nobr></span>
+                <nobr>
+                  <span class="title__head_slim">Your Issue</span>
+                </nobr>
               </h2>
               <p class="title__desc">We’re always happy to reply our customers.</p>
             </div>
