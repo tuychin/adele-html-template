@@ -1,10 +1,7 @@
-<div align="center">
-  <h1>Adele html template</h1>
-  <p>
-    This landing page, using HTML, CSS, JS, Webpack, Babel, Sass, Postcss (autoprefixer, css-nano, css-mqpacker).
-  </p>
-  <p>100% ADAPTIVE</p>
-</div>
+<h1>Adele html template</h1>
+
+This landing page, using HTML, CSS, JS, Webpack, Babel, Sass, Postcss (autoprefixer, css-nano, css-mqpacker).<br>
+100% ADAPTIVE
 
 Link: [tuychin.ru/adele](https://tuychin.ru/adele)
 
