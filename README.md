@@ -3,8 +3,6 @@
 This landing page using: HTML, CSS, JS, Webpack, Babel, Sass, Postcss (autoprefixer, css-nano, css-mqpacker).<br>
 100% ADAPTIVE
 
-Link: [tuychin.ru/adele](https://tuychin.ru/adele)
-
 <h2>Available Scripts</h2>
 
 ### `npm run dev`
